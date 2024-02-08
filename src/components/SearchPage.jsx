@@ -27,7 +27,6 @@ export default function SearchPage({
         <ol className="books-grid">
           {(searchBook && searchBook.length) ?
             searchBook.map((book, index) => {
-              debugger
               let existBook = booksList.find((item) => item.id === book.id);
               return (
                 <li key={index}>
